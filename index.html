@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberLink | Connect with Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Share+Tech+Mono&display=swap');
+        
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #0a0a0a;
+            color: #e2e8f0;
+            scroll-behavior: smooth;
+        }
+        
+        .code-text {
+            font-family: 'Share Tech Mono', monospace;
+        }
+        
+        .glow-text {
+            text-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+        }
+        
+        .social-card {
+            transition: all 0.3s ease;
+            border: 1px solid #1e293b;
+        }
+        
+        .social-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+            border-color: #3b82f6;
+        }
+        
+        .terminal {
+            background-color: #111827;
+            border: 1px solid #1e293b;
+            border-radius: 0.5rem;
+            position: relative;
+        }
+        
+        .terminal-header {
+            background-color: #1e293b;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+        
+        .terminal-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 6px;
+        }
+        
+        .terminal-content {
+            font-family: 'Share Tech Mono', monospace;
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: 2px solid #3b82f6;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: 
+                typing 3.5s steps(50, end),
+                blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 48% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #3b82f6 }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Animated Background -->
+    <div class="fixed inset-0 -z-10 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 opacity-80"></div>
+        <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-12 max-w-4xl">
+        <!-- Header -->
+        <header class="text-center mb-16">
+            <div class="w-32 h-32 mx-auto mb-6 rounded-full border-4 border-blue-500 overflow-hidden">
+                <img src="baxom.jpg" alt="Profile" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 glow-text">Emad Mustafa Hamad</h1>
+            <div class="terminal max-w-md mx-auto mb-6">
+                <div class="terminal-header px-4 py-2 flex items-center">
+                    <span class="terminal-dot bg-red-500"></span>
+                    <span class="terminal-dot bg-yellow-500"></span>
+                    <span class="terminal-dot bg-green-500"></span>
+                    <span class="text-xs ml-2">terminal</span>
+                </div>
+                <div class="terminal-content p-4">
+                    <p class="text-green-400 code-text"> Who Am I ?</p>
+                    <p class="typewriter text-blue-400"> Software Engineer </p>
+                </div>
+            </div>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Connecting the digital world through code and security. Find me across platforms below.
+            </p>
+        </header>
+
+        <!-- Social Links Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/16nSCeroY3/" class="social-card bg-gray-900 rounded-lg p-6 flex items-center hover:bg-gray-800">
+                <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-4">
+                    <i class="fab fa-facebook-f text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold">Facebook</h3>
+                    <p class="text-sm text-gray-400">Emad Xoshnaw</p>
+                </div>
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/emad.mustaf4?igsh=NW4wZmxyMHBsN3Zv" class="social-card bg-gray-900 rounded-lg p-6 flex items-center hover:bg-gray-800">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center mr-4">
+                    <i class="fab fa-instagram text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold">Instagram</h3>
+                    <p class="text-sm text-gray-400">emad.mustaf4</p>
+                </div>
+            </a>
+            
+            <!-- Snapchat -->
+            <a href="https://www.snapchat.com/add/emad.mustaf4?share_id=vbfg-hRcIjg&locale=en-GB" class="social-card bg-gray-900 rounded-lg p-6 flex items-center hover:bg-gray-800">
+                <div class="w-12 h-12 rounded-full bg-yellow-400 flex items-center justify-center mr-4">
+                    <i class="fab fa-snapchat-ghost text-gray-900 text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold">Snapchat</h3>
+                    <p class="text-sm text-gray-400">emad.mustaf4</p>
+                </div>
+            </a>
+            
+            <!-- Telegram -->
+            <a href="https://t.me/EmadXoshn4w" class="social-card bg-gray-900 rounded-lg p-6 flex items-center hover:bg-gray-800">
+                <div class="w-12 h-12 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                    <i class="fab fa-telegram text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold">Telegram</h3>
+                    <p class="text-sm text-gray-400">Emad Xoshnaw</p>
+                </div>
+            </a>
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/qr/3RJKPALV2T7RC1" class="social-card bg-gray-900 rounded-lg p-6 flex items-center hover:bg-gray-800">
+                <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center mr-4">
+                    <i class="fab fa-whatsapp text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold">WhatsApp</h3>
+                    <p class="text-sm text-gray-400">+9647514945640</p>
+                </div>
+            </a>
+            
+            <!-- Viber -->
+            <a href="viber://add?number=9647514945640" class="social-card bg-gray-900 rounded-lg p-6 flex items-center hover:bg-gray-800">
+                <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center mr-4">
+                    <i class="fab fa-viber text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold">Viber</h3>
+                    <p class="text-sm text-gray-400">+9647514945640</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-center glow-text">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-gray-900 rounded-lg p-4 text-center">
+                    <i class="fas fa-code text-blue-400 text-3xl mb-2"></i>
+                    <h3 class="font-medium">Software Dev</h3>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-4 text-center">
+                    <i class="fas fa-shield-alt text-green-400 text-3xl mb-2"></i>
+                    <h3 class="font-medium">Cyber Security</h3>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-4 text-center">
+                    <i class="fas fa-bug text-red-400 text-3xl mb-2"></i>
+                    <h3 class="font-medium">Pen Testing</h3>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-4 text-center">
+                    <i class="fas fa-network-wired text-purple-400 text-3xl mb-2"></i>
+                    <h3 class="font-medium">Networking</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-500 text-sm">
+            <p>Powered by Xom </p>
+            <p class="mt-2 code-text">Last updated: <span class="text-blue-400">2025</span></p>
+        </footer>
+    </div>
